@@ -1,5 +1,5 @@
 def solution(priorities, location):
-
+    answer = []
 
 
     
