@@ -16,7 +16,7 @@ def solution(priorities, location):
             priorities[index] = 0 #maximum값 0으로 치환
             maximum = max(priorities) #새로운 maximum값 대입
             print("max는 %d" %maximum)
-            if index == location:
+            if index == location: # 선택한 위치가 가장 높은 값이면 바로 answer 출력
                 print(answer)
                 return answer
 
