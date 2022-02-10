@@ -1,0 +1,13 @@
+<mxfile host="65bd71144e">
+    <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+        <mxGraphModel dx="481" dy="716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="0" value="장르별로 재생 많이 된 노래 두개 씩 모아 베스트앨범&lt;br&gt;노래 = 고유번호로 구분&lt;br&gt;&lt;br&gt;1. 노래가 많이 재생된 장르를 먼저 수록&lt;br&gt;2. 장르 내에서 많이 재생된 노래 먼저&lt;br&gt;3. 같으면 고유번호가 낮은 노래를 먼저 수록&lt;br&gt;&lt;br&gt;&lt;br&gt;장르 배열 genres = []&lt;br&gt;노래별 재생 횟수 plays = []&lt;br&gt;노래의 고유번호를 순서대로 return&lt;br&gt;&lt;br&gt;&lt;br&gt;genres[i] = 고유번호가 i인 노래의 장르&lt;br&gt;plays[i] = 고유번호가 i인 노래가 재생된&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="490" y="30" width="290" height="1070" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
