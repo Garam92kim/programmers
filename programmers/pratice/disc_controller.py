@@ -13,6 +13,7 @@ def solution(jobs):
         start_time.append(jobs[i][0])
     
     while True:
+       # print("다시 돌아왔나")
         if len(start_time) == 1:
             job_scheduler.append(job_time[0])
             total_job_time = max(job_scheduler)
@@ -22,14 +23,17 @@ def solution(jobs):
             job_time.pop(0)
             start_time.pop(0)
             count += result_real
-            break
+            return
         elif start_time[0] <= 0:
-            print("Start_time 가장 낮은값 0 미만일때 들어옴")
+            print("여긴 언제", start_time, job_time)
             for i in range(len(job_time)):
+    
+                print("여긴 언제", i)
                 if  len(job_time) < 2:
                     break
-                
+                    
                 elif job_time[i] == min(job_time): # 최소값 찾기
+                    print (i)
                     print(job_time[i], min(job_time))
                     for j in range(len(job_scheduler)):
                         total_job_time = total_job_time + job_scheduler[j]
@@ -40,20 +44,23 @@ def solution(jobs):
                     job_time.pop(i)
                     start_time.pop(i)
                     count += result_real
-                    print(job_time[i], min(job_time))
+                    print("빠져나옴", start_time, job_time)
                 else:
+                    print("다시돌아가")
                     break
         else:
-            for i in range(len(job_time)):
+            print("여기 들어왔나")
+            for i in range(len(start_time)):
                 start_time[i] -= 1
                 print("여기 어려워", start_time, job_time)
-            global_wait_time += 1  
-                     
+                global_wait_time += 1  
+        print("글로발", global_wait_time)
+         
     answer = count / len(job_scheduler)
     print("#######최종 결과 : ", answer, "\n", "job_scheduler : ", job_scheduler, "\n", "job_time : ", job_time, "\n", "start_time : ", start_time)
     return answer
 
-solution([[0, 3], [2, 9], [1, 6]])
+solution([[1, 3], [2, 2], [15, 2]])
 
 """
   요청부터 종료까지
