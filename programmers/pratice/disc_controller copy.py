@@ -1,4 +1,8 @@
+
 import heapq
+from operator import length_hint
+from os import sep
+from turtle import st
 
 def solution(jobs):
     jobs.sort()
@@ -24,5 +28,6 @@ def solution(jobs):
             time += 1
     print(answer // length)
     return answer // length
+
 
 solution([[0, 3], [1, 9], [2, 6]])
