@@ -1,0 +1,13 @@
+<mxfile host="65bd71144e">
+    <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+        <mxGraphModel dx="924" dy="676" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="0" value="1. Log로 부터 문자열을 읽어 라인별로 저장 ?&lt;br&gt;&lt;br&gt;2. 라인별로 돌면서 문자열 비교&lt;br&gt;&lt;br&gt;&lt;br&gt;* Log 시간이 70초 이상 입력되지 않을 경우 FAIL&lt;br&gt;&lt;br&gt;동작 확인을위한 Timer 스레드&lt;br&gt;&lt;br&gt;70초 이상 Log가 입력되지 않는 상황을 어떻게 만들까?&lt;br&gt;Log에서 입력되는 Lines가 70초 이상 비어있으면?" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="550" y="140" width="210" height="470" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
