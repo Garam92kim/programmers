@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-        <mxGraphModel dx="712" dy="871" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="674" dy="871" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
                 <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
@@ -51,8 +51,52 @@
                         <mxPoint x="60" y="120" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="23" value="1. Log로 부터 문자열을 읽어 라인별로 저장 ?&lt;br&gt;&lt;br&gt;2. 라인별로 돌면서 문자열 비교&lt;br&gt;&lt;br&gt;&lt;br&gt;* Log 시간이 70초 이상 입력되지 않을 경우 FAIL&lt;br&gt;&lt;br&gt;동작 확인을위한 Timer 스레드&lt;br&gt;&lt;br&gt;70초 이상 Log가 입력되지 않는 상황을 어떻게 만들까?&lt;br&gt;Log에서 입력되는 Lines가 70초 이상 비어있으면?&lt;br&gt;&lt;br&gt;1. Txt에 count를 입력하여 count가 오지 않으면 break 하는 방법&lt;br&gt;&lt;br&gt;특수문자 충돌등에 의한 Error 발생 시 대응 방법&lt;br&gt;1. Log file 여러개로&amp;nbsp;&lt;br&gt;2. try-except로 다른 log파일 열기&lt;br&gt;-&amp;gt; Log 파일 여러개 생성은 실패&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+                <mxCell id="23" value="1. Log로 부터 문자열을 읽어 라인별로 저장 ?&lt;br&gt;&lt;br&gt;2. 라인별로 돌면서 문자열 비교&lt;br&gt;&lt;br&gt;&lt;br&gt;* Log 시간이 70초 이상 입력되지 않을 경우 FAIL&lt;br&gt;&lt;br&gt;동작 확인을위한 Timer 스레드&lt;br&gt;&lt;br&gt;70초 이상 Log가 입력되지 않는 상황을 어떻게 만들까?&lt;br&gt;Log에서 입력되는 Lines가 70초 이상 비어있으면?&lt;br&gt;&lt;br&gt;1. Txt에 count를 입력하여 count가 오지 않으면 break 하는 방법&lt;br&gt;&lt;br&gt;특수문자 충돌등에 의한 Error 발생 시 대응 방법&lt;br&gt;1. Log file 여러개로&amp;nbsp;&lt;br&gt;2. try-except로 다른 log파일 열기&lt;br&gt;-&amp;gt; Log 파일 여러개 생성은 실패&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
                     <mxGeometry x="320" y="140" width="210" height="470" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="dAQfpEdX2pU9Dpjad1IR" name="SW_Overview">
+        <mxGraphModel dx="434" dy="871" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-0"/>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-1" parent="42iMEpAiWCkOY4xxqwo_-0"/>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="42iMEpAiWCkOY4xxqwo_-1" vertex="1">
+                    <mxGeometry x="100" y="100" width="370" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="42iMEpAiWCkOY4xxqwo_-1" vertex="1">
+                    <mxGeometry x="110" y="270" width="350" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-4" value="State Machine" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="42iMEpAiWCkOY4xxqwo_-1" vertex="1">
+                    <mxGeometry x="110" y="240" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-5" value="Application" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="42iMEpAiWCkOY4xxqwo_-1" vertex="1">
+                    <mxGeometry x="110" y="110" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="42iMEpAiWCkOY4xxqwo_-1" vertex="1">
+                    <mxGeometry x="110" y="140" width="350" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-6" value="Database Class" style="rounded=0;whiteSpace=wrap;html=1;" parent="42iMEpAiWCkOY4xxqwo_-1" vertex="1">
+                    <mxGeometry x="342.5" y="150" width="105" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-8" value="Excel Class" style="rounded=0;whiteSpace=wrap;html=1;" parent="42iMEpAiWCkOY4xxqwo_-1" vertex="1">
+                    <mxGeometry x="232.5" y="150" width="105" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-10" value="Main Class" style="rounded=0;whiteSpace=wrap;html=1;" parent="42iMEpAiWCkOY4xxqwo_-1" vertex="1">
+                    <mxGeometry x="122.5" y="150" width="105" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-14" value="Time thread" style="rounded=0;whiteSpace=wrap;html=1;" parent="42iMEpAiWCkOY4xxqwo_-1" vertex="1">
+                    <mxGeometry x="122.5" y="280" width="105" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-15" value="Charging Check" style="rounded=0;whiteSpace=wrap;html=1;" parent="42iMEpAiWCkOY4xxqwo_-1" vertex="1">
+                    <mxGeometry x="122.5" y="350" width="105" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-7" value="Update DB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="42iMEpAiWCkOY4xxqwo_-1">
+                    <mxGeometry x="342.5" y="280" width="105" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42iMEpAiWCkOY4xxqwo_-9" value="Update Excel Data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="42iMEpAiWCkOY4xxqwo_-1">
+                    <mxGeometry x="232.5" y="280" width="105" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

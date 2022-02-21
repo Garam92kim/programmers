@@ -1,8 +1,8 @@
 import threading
-import openpyxl
 from datetime import datetime
-from openpyxl import workbook
 import serial
+import Auto_DB
+import Auto_Excel
 
 count = 0 # Timer thread 동작을 위함
 port = "COM3"
@@ -23,7 +23,7 @@ def time_thread(): #Timer thread 동작을 위한 함수
     if count > 130: #130초 경과 시 종료
         aging_end_time = datetime.today()
         execution_time = aging_end_time - aging_start_time
-
+        Auto_Excel.Update_data(aging_start_time, aging_end_time, execution_time, execution_count)
         print("Total test time : ", execution_time)
         print("Number of execution : %d" %execution_count)
         timer.cancel()
@@ -36,6 +36,7 @@ while True:
             res = ser.readline()
             try:
                 res_str = res.decode("UTF-8")
+                Auto_DB.Update_DB(datetime.today(), res_str)
                 if "SW_NUMBER" in res_str:
                     count = 0
                     execution_count += 1
