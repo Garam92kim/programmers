@@ -3,6 +3,7 @@ import openpyxl
 from datetime import datetime
 from openpyxl import workbook
 import serial
+import AutomationforWCBS_DB
 
 count = 0 # Timer thread 동작을 위함
 port = "COM3"
