@@ -14,4 +14,6 @@ for i in range(kit_ea):
     
 for i in range(0, kit_ea-1):
     print(kit_ea, kit_num_gas[i][i])
-    
+
+
+
