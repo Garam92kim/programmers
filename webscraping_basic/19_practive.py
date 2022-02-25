@@ -69,5 +69,7 @@ def english_comm():
         print(sentece.get_text().strip())
         
 
-
+wather_check()
+headline_news()
+scrape_it_news()
 english_comm()
