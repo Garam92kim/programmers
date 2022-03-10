@@ -29,11 +29,11 @@ def solution(numbers):
     print(nemp_num)
     print(nemp_num[index])
     
-    for i in range(len(new_list)):
-        if new_list[i][0] > max(new_list):
+    # for i in range(len(new_list)):
+    #     if new_list[i][0] > max(new_list):
             
     
-    print(numbers[index])
+    # print(numbers[index])
     # 첫번째 자리 먼저 비교하고
     # 두번째 부터 마지막 자리까지 순차 비교하여 정렬
     
