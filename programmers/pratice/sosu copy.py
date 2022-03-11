@@ -18,7 +18,7 @@ from itertools import permutations
 #         numbers_per_list = list(map(int, map("".join, numbers_permutation))) # string 형태를 int로 map 하여 저장
 #         prime_set |= set(numbers_per_list) # 집합으로 prime_set에 저장
         
-#     # 2. 소수가 아닌 수를 제외한다. (에라~ 체)
+#     # 2. 소수가 아닌 수를 제외한다. (에라토스테네스의 체)
 #     prime_set -= set(range(0,2))
 #     lim = int(max(prime_set) ** 0.5) + 1 # 두번째 인자를 사용하기 위함, 가장 큰 값에 루트를 씌움
 #     for i in range(2, lim):
